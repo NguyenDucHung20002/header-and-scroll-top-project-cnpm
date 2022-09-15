@@ -1,0 +1,80 @@
+header {
+  .header-top {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    .portion-upper {
+      background-color: rgba(#ffffff, 0.9);
+      padding: 25px 0;
+      .container {
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        .header-left {
+          .wrapper-nav-main {
+            background-color: rgba(#ffffff, 0.9);
+      padding: 25px 0;
+      .container {
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        .header-left {
+          .wrapper-nav-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .nav-main {
+              margin: 0 10px;
+              .nav-link-main {
+                padding: 10px 0;
+                font-size: 16px;
+                text-transform: uppercase;
+                color: #666666;
+                position: relative;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  bottom: 0;
+                  right: 0;
+                  width: 0;
+                  height: 2px;
+                  background-color: #ea1616;
+                  transition: 0.3s;
+                }
+                &:hover {
+                  color: #ab1e32;
+                  &::after {
+                    left: 0;
+                    width: 100%;
+                  }
+                }
+                i {
+                  font-size: 10px;
+                }
+              }
+              &.active-nav-main {
+                .nav-link-main {
+                  color: #ea1616;
+                  &::after {
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .header-right {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
